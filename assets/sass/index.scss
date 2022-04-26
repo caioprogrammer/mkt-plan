@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import './components/reset';
+@import './components/sidebar';
+@import './components/games';
+@import './components/titles';
+@import './components/blog';
+@import './components/contato';
+
+body {
+  background-color: #1E1E1E;
+  font-family: 'Montserrat';
+  display: flex;
+  @media screen and (max-width: 1024px) {
+    display: block !important;
+  }
+}
+
+main {
+  padding: 0px 105px 0px 335px;
+  width: 100%;
+  @media screen and (max-width: 1024px) {
+    padding: 0px 40px 0px 40px !important;
+  }
+}
+
+.section {
+  height: 100%;
+  max-height: 1080px;
+  @media screen and (max-width: 1024px) {
+    height: auto;
+    max-height: none;
+    margin-bottom: 100px;
+  }
+  &:last-child {
+    height: 40%;
+    @media screen and (max-width: 1024px) {
+      height: auto;
+    }
+  }
+}
+
+.is-mobile {
+  display: none;
+  @media screen and (max-width: 1024px) {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+header {
+  width: 100%;
+    padding: 15px;
+    border-bottom: 1px solid #707070;
+    margin-bottom: 30px;
+
+}

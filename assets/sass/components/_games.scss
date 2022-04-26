@@ -1,0 +1,42 @@
+.games {
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  &__text {
+    color: #939598;
+    .conteudo {
+      max-width: 600px;
+      h1 {
+        color: #939598;
+        font-size: 30px;
+        font-weight: 500;
+      }
+      h3 {
+        color: #A3A3A3;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 13px;
+        color: #fff;
+      }
+    }
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    .notice {
+      max-width: 190px;
+      p {
+        font-size: 13px;
+        margin-top: 28px;
+      }
+    }
+  }
+}
