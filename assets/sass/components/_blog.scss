@@ -3,8 +3,10 @@
     margin-top: 50px;
     display: flex;
     align-items: flex-start;
-    gap: 20px;
     flex-wrap: wrap;
+    @media screen and (max-width: 1280px) {
+      justify-content: center;
+    }
   }
   &__post {
     display: flex;
@@ -12,6 +14,7 @@
     max-width: 260px;
     position: relative;
     overflow: hidden;
+    margin-bottom: 20px;
     .vr {
       position: absolute;
       top: 15px;

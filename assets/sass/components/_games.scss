@@ -31,8 +31,18 @@
     align-items: flex-start;
     gap: 20px;
     flex-wrap: wrap;
+    @media screen and (max-width: 1280px) {
+      margin-top: 20px;
+      justify-content: space-between;
+    }
     .notice {
       max-width: 190px;
+      img {
+        max-width: 100%;
+      }
+      @media screen and (max-width: 1280px) {
+        max-width: 150px;
+      }
       p {
         font-size: 13px;
         margin-top: 28px;

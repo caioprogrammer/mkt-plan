@@ -343,8 +343,25 @@ template {
   flex-wrap: wrap;
 }
 
+@media screen and (max-width: 1280px) {
+  .games__content {
+    margin-top: 20px;
+    justify-content: space-between;
+  }
+}
+
 .games__content .notice {
   max-width: 190px;
+}
+
+.games__content .notice img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1280px) {
+  .games__content .notice {
+    max-width: 150px;
+  }
 }
 
 .games__content .notice p {
@@ -381,8 +398,13 @@ template {
   margin-top: 50px;
   display: flex;
   align-items: flex-start;
-  gap: 20px;
   flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1280px) {
+  .blog__content {
+    justify-content: center;
+  }
 }
 
 .blog__post {
@@ -391,6 +413,7 @@ template {
   max-width: 260px;
   position: relative;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .blog__post .vr {
@@ -504,6 +527,12 @@ template {
   max-height: 468px;
 }
 
+@media screen and (max-width: 1024px) {
+  .contato__right {
+    margin-top: 25px;
+  }
+}
+
 .contato__right ul {
   display: flex;
   gap: 20px;
@@ -513,6 +542,7 @@ template {
 @media screen and (max-width: 1024px) {
   .contato__right ul {
     flex-direction: column;
+    align-items: flex-start;
   }
 }
 
@@ -577,6 +607,15 @@ body {
   }
 }
 
+:target:before {
+  content: "";
+  display: block;
+  height: 120px;
+  /* fixed header height*/
+  margin: -120px 0 0;
+  /* negative fixed header height */
+}
+
 main {
   padding: 0px 105px 0px 335px;
   width: 100%;
@@ -584,7 +623,7 @@ main {
 
 @media screen and (max-width: 1024px) {
   main {
-    padding: 0px 40px 0px 40px !important;
+    padding: 0px 15px 0px 15px !important;
     margin-top: 100px;
   }
 }
@@ -630,4 +669,6 @@ header {
   margin-bottom: 30px;
   top: 0;
   position: fixed;
+  z-index: 9;
+  background-color: #1E1E1E;
 }
