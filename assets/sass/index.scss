@@ -21,6 +21,7 @@ main {
   width: 100%;
   @media screen and (max-width: 1024px) {
     padding: 0px 40px 0px 40px !important;
+    margin-top: 100px;
   }
 }
 
@@ -50,8 +51,9 @@ main {
 
 header {
   width: 100%;
-    padding: 15px;
-    border-bottom: 1px solid #707070;
-    margin-bottom: 30px;
-
+  padding: 15px;
+  border-bottom: 1px solid #707070;
+  margin-bottom: 30px;
+  top: 0;
+  position: fixed;
 }
